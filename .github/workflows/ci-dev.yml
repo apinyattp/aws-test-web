@@ -85,6 +85,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: ras-frontend-dev-service
-          cluster: ras-dev
+          service: test-frontend
+          cluster: test-web
           wait-for-service-stability: true
